@@ -107,7 +107,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 	     wx:for-item="{{lists}}"  循环  那么每一项就是lists
          这里设置高，必须给swiper设置，不可以给swiper-item上
 ```
-##关于假数据
+## 关于假数据
   当我们做好一个假数据，怎么能在其他页面进行引用
   var data = [];
   支持common.js语法，可以使用module.exports = data；进行导出；
@@ -172,6 +172,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ## 时间选择器  start和end是可以不写的，也可以动态绑定的
   //这个是时间选择器，
+  ```
    <picker mode="time" start="10:00" end="18:00" data="{{date}}" bindchange='timeEvent'>
      <view>你选择的时间是{{date}}</view>
    </picker>
@@ -180,7 +181,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
    <picker mode="date" start="{{aa}}" end="" data="{{time}}" bindchange='timedateEvent'>
      <view>你选择的时间是{{time}}</view>
    </picker>
-
+```
 
 ## 请求动态数据
 ```
